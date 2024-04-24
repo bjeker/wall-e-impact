@@ -1,6 +1,6 @@
 # wall-e-impact
 
-`wall-e-impact` is a gaming environmental impact calculator plugin which euses the ImpactFramework [IEF](https://github.com/Green-Software-Foundation/ief) to retrieve energy and embodied carbon estimates.
+`wall-e-impact` is a gaming environmental impact calculator plugin which uses the ImpactFramework [IEF](https://github.com/Green-Software-Foundation/ief) to retrieve energy and embodied carbon estimates while playing games on pc.
 
 ## Usage
 
