@@ -1,7 +1,18 @@
 name: Gaming Test
-description: loads plugin for test
-tags: null
+description: test the plugin
+tags: 
 initialize:
   plugins:
-    wall-e-impact:
+    wall-e-impact: 
       method: MyCustomPlugin
+      path: wall-e-impact
+tree:
+  children:
+    child:
+      pipeline:
+        - wall-e-impact
+      config:
+      defaults:
+      inputs:
+        - timestamp: '2023-11-02T10:35:31.820Z'
+        - cpuutilization: 80
