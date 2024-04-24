@@ -1,4 +1,4 @@
-# if-model-template
+# wall-e-impact
 
 `If-model-template` is an environmental impact calculator template which exposes an API for [IEF](https://github.com/Green-Software-Foundation/ief) to retrieve energy and embodied carbon estimates.
 
