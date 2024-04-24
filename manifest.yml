@@ -2,6 +2,9 @@ name: Gaming Test
 description: test the plugin
 tags: 
 initialize:
+  outputs:
+    - yml
+    - csv
   plugins:
     wall-e-impact: 
       method: MyCustomPlugin
