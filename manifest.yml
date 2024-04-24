@@ -13,7 +13,7 @@ tree:
   children:
     child:
       pipeline:
-        - wall-e-impact
+        - Sum
       config:
       defaults:
       inputs:
