@@ -1,28 +1,9 @@
 name: Gaming Test
-description: Gaming Emission Data
-tags:
+description: loads plugin for test
+tags: null
 initialize:
   plugins:
-    wall-e-impact:
-      method: cpu
-      path: ''
+    my-custom-plugin:
+      method: MyCustomPlugin
+      path: "<name-field-from-package.json>"
       global-config:
-        input-parameters:
-        output-parameter:
-tree:
-  children:
-    game:
-      defaults:
-        
-      pipeline:
-        - wall-e-impact
-      inputs:
-        - timestamp: 2023-07-06T00:00
-          duration: 1
-          cpu/utilization: 20
-        - timestamp: 2023-07-06T00:01
-          duration: 20
-          cpu/utilization: 80
-        - timestamp: 2023-07-06T00:02
-          duration: 30
-          cpu/utilization: 20
