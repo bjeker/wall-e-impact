@@ -3,7 +3,6 @@ description: loads plugin for test
 tags: null
 initialize:
   plugins:
-    my-custom-plugin:
+    wall-e-impact:
       method: MyCustomPlugin
-      path: "<name-field-from-package.json>"
       global-config:
