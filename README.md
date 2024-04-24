@@ -2,10 +2,6 @@
 
 `If-model-template` is an environmental impact calculator template which exposes an API for [IEF](https://github.com/Green-Software-Foundation/ief) to retrieve energy and embodied carbon estimates.
 
-## Implementation
-
-Here can be implementation details of the model. For example which API is used, transformations and etc.
-
 ## Usage
 
 This is an example yaml to use for the plugin
