@@ -8,7 +8,7 @@ initialize:
   plugins:
     wall-e-impact: 
       method: MyCustomPlugin
-      path: wall-e-impact
+      path: C:\Users\Ryan Bieker\Documents\GitHub\wall-e-impact\manifest.yml
 tree:
   children:
     child:
