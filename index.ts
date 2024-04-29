@@ -4,9 +4,8 @@ const Copy = (globalConfig) => {
   };
 
   const execute = async (inputs, config) => {
-    //console.log(inputs);
-    //console.log("Energy used was :", inputs[3])
     var hours = inputs[1]["duration"] / 3600;
+    const outputParameter = globalConfig['output-parameter'];
 
     //Game Engine Calculations
     if (inputs[4]["engine"] === "Unity") {
@@ -27,6 +26,11 @@ const Copy = (globalConfig) => {
     //Predicted Energy Usage for the future
     console.log("If continued to run for 10 hours the predicted energy usage for gpu/energy: ", inputs[3]["gpu/energy"] * 10);
     console.log("If continued to run for 10 hours the predicted energy usage for cpu/energy: ", inputs[2]["cpu/energy"] * 10);
+
+    return {
+      ["cpu/energy/kWh"]: cpuEnergy,
+      ["gpu/energy/kWh"]: gpuEnergy,
+    };
   };
  
   return {

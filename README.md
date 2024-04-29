@@ -21,6 +21,7 @@ initialize:
       method: Copy
       global-config:
         keep-existing: true
+        output-parameter: energy
 tree:
   children:
     child:
