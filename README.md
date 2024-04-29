@@ -4,7 +4,8 @@
 
 ## Usage
 
-This is an example yaml to use for the plugin
+This is an example yaml to use for the plugin.
+For engines, Unity and Unreal Engine are supported so far, spelled as such.
 
 ```yaml
 name: Gaming Test
@@ -15,19 +16,27 @@ initialize:
     - yml
     - csv
   plugins:
-    wall-e-impact: 
-      method: MyCustomPlugin
-      path: wall-e-impact
+    wall-e-impact:
+      path: 'wall-e-impact\index.ts'
+      method: Copy
+      global-config:
+        keep-existing: true
 tree:
   children:
     child:
       pipeline:
         - wall-e-impact
       config:
+        - unity
       defaults:
       inputs:
-        - timestamp: 2023-07-06T00:00
+        - timestamp: 2023-08-06T00:00
         - duration: 3600
-        - cpu-util: 45
+        - cpu/energy: 0.001
+        - gpu/energy: 0.005
+        - network/energy: 0.001
+        - engine: Unity
 ...
 ```
+
+This is in active development and more features will be implemented.
