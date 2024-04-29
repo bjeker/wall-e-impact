@@ -33,7 +33,6 @@ tree:
         - cpu/energy: 0.001
         - gpu/energy: 0.005
         - engine: Unreal Engine
-...
 ```
 ## Running the plugin
 - Download this plugin and open in Visual Studio Code.
