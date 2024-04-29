@@ -6,13 +6,27 @@ const Copy = (globalConfig) => {
   const execute = async (inputs, config) => {
     //console.log(inputs);
     //console.log("Energy used was :", inputs[3])
-    if (inputs[5]["engine"] === "Unity") {
+    var hours = inputs[1]["duration"] / 3600;
+
+    //Game Engine Calculations
+    if (inputs[4]["engine"] === "Unity") {
       console.log("Unity has 16% less power usage and 22% less gpu usage")
     }
-    else if (inputs[5]["engine"] === "Unreal Engine")
+    else if (inputs[4]["engine"] === "Unreal Engine")
       {
-        console.log("Unreal engine has 16% more power usage and 22% more gpu usage")
+        console.log("Unreal engine has 16% more power usage and 22% more gpu usage");
       }
+
+    //GPU Energy calculation kWh
+    var gpuEnergy = hours * inputs[3]["gpu/energy"];
+    console.log("GPU energy in kWh: ", gpuEnergy);
+    //CPU Energy calculation kWh
+    var cpuEnergy = hours * inputs[2]["cpu/energy"];
+    console.log("CPU energy in kWh: ", cpuEnergy);
+
+    //Predicted Energy Usage for the future
+    console.log("If continued to run for 10 hours the predicted energy usage for gpu/energy: ", inputs[3]["gpu/energy"] * 10);
+    console.log("If continued to run for 10 hours the predicted energy usage for cpu/energy: ", inputs[2]["cpu/energy"] * 10);
   };
  
   return {

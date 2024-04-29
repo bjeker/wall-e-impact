@@ -31,11 +31,10 @@ tree:
       defaults:
       inputs:
         - timestamp: 2023-08-06T00:00
-        - duration: 3600
+        - duration: 5200
         - cpu/energy: 0.001
         - gpu/energy: 0.005
-        - network/energy: 0.001
-        - engine: Unity
+        - engine: Unreal Engine
 ...
 ```
 ## Running the plugin
