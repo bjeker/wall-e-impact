@@ -1,15 +1,13 @@
 {
-  "name": "if-plugin-template",
+  "name": "wall-e-impact",
   "description": "Impact Framework plugins template.",
-  "version": "v0.1.0",
-  "author": {
-    "name": "Green Software Foundation",
-    "email": "info@gsf.com"
-  },
+  "version": "0.1.0",
+  "author": "Green Software Foundation <info@gsf.com>",
   "bugs": {
     "url": "https://github.com/Green-Software-Foundation/if-plugin-template/issues/new?assignees=&labels=feedback&projects=&template=feedback.md&title=Feedback+-+"
   },
   "dependencies": {
+    "if-plugin-template": "github:bjeker/wall-e-impact",
     "typescript": "^5.1.6"
   },
   "devDependencies": {
@@ -20,7 +18,6 @@
     "@types/node": "^20.4.5",
     "fixpack": "^4.0.0",
     "gts": "^5.0.0",
-    "husky": "^8.0.0",
     "jest": "^29.7.0",
     "rimraf": "^5.0.5",
     "ts-jest": "^29.1.2"
@@ -34,7 +31,7 @@
   "license": "MIT",
   "main": "build/index.js",
   "repository": {
-    "url": "https://github.com/Green-Software-Foundation/if-plugin-template.git"
+    "url": "git+https://github.com/Green-Software-Foundation/if-plugin-template.git"
   },
   "scripts": {
     "build": "npm run clean && tsc --project tsconfig.build.json",
@@ -46,5 +43,6 @@
     "prepare": "husky install",
     "prepublish": "npm run build",
     "test": "jest --verbose"
-  }
+  },
+  "types": "./build/index.d.ts"
 }
