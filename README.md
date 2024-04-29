@@ -13,8 +13,7 @@ description: test the plugin
 tags: 
 initialize:
   outputs:
-    - yml
-    - csv
+    - yaml
   plugins:
     wall-e-impact:
       path: 'wall-e-impact\index.ts'
@@ -27,8 +26,6 @@ tree:
     child:
       pipeline:
         - wall-e-impact
-      config:
-        - unity
       defaults:
       inputs:
         - timestamp: 2023-08-06T00:00
