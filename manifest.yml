@@ -20,6 +20,6 @@ tree:
       inputs:
         - timestamp: 2023-08-06T00:00
         - duration: 5200
-        - cpu/energy: 0.001
-        - gpu/energy: 0.005
-        - engine: Unreal Engine
+        - cpu/energy: 0.00006
+        - gpu/energy: 0.0041
+        - engine: Unity
