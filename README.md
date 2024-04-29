@@ -37,11 +37,11 @@ tree:
 ```
 ## Running the plugin
 - Download this plugin and open in Visual Studio Code.
-- Upload a yaml file with the naming convention "manifest.yml" based on the given template.
+- Upload a YAML file with the naming convention "manifest.yml" based on the given template.
 - Install node.js and npm: https://docs.npmjs.com/downloading-and-installing-node-js-and-npm
 - Install the Impact Framework using this terminal command: npm install -g @grnsft/if
 - Compute the metrics and data using this terminal command: npx ie --manifest manifest.yml
-- The outputs will be in the console.
+- The outputs will be in the console and in the output YAML file named "energy.yml".
 
 This is in active development and more features will be implemented.
 
