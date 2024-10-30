@@ -4,7 +4,7 @@ const Copy = (globalConfig) => {
   };
 
   const execute = async (inputs, config) => {
-    var hours = inputs[1]["duration"] / 3600;
+    let hours: number = inputs[1]["duration"] / 3600;
     const outputParameter = globalConfig['output-parameter'];
 
     //Game Engine Calculations
@@ -17,10 +17,10 @@ const Copy = (globalConfig) => {
       }
 
     //GPU Energy calculation kWh
-    var gpuEnergy = hours * inputs[3]["gpu/energy"];
+    let gpuEnergy: number = hours * inputs[3]["gpu/energy"];
     console.log("GPU energy in kWh: ", gpuEnergy);
     //CPU Energy calculation kWh
-    var cpuEnergy = hours * inputs[2]["cpu/energy"];
+    let cpuEnergy: number = hours * inputs[2]["cpu/energy"];
     console.log("CPU energy in kWh: ", cpuEnergy);
 
     //Predicted Energy Usage for the future
