@@ -42,8 +42,6 @@ tree:
 - Compute the metrics and data using this terminal command: npx ie --manifest manifest.yml
 - The outputs will be in the console and in the output YAML file named "energy.yml".
 
-This is in active development and more features will be implemented.
-
 ## Credits
 This was done using research on Game Engines and their power consumptions from the following.
 https://arxiv.org/pdf/2402.06346v1
