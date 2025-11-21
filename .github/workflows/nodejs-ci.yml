@@ -16,6 +16,9 @@ jobs:
           node-version: 18
           cache: 'npm'
 
+      - name: Install husky
+        run: npm install husky
+
       - name: Install dependencies
         run: npm install
 
